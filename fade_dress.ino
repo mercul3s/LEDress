@@ -8,11 +8,9 @@ void setup(){
     digitalWrite(ledArray[count], LOW);
     delay(10);
   }
-
 }
 
 void loop(){   
-  
   for (int count = 0; count < arrayLength; count ++) {
     int randLED = random(0, arrayLength);
     int randTime = random(0, 20);
@@ -24,6 +22,5 @@ void loop(){
       analogWrite(ledArray[randLED], fadeValue);
       delay(randTime);
     }
-  }                                                                                                           
+  }                  
 }
-
